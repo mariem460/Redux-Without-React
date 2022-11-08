@@ -69,9 +69,10 @@ const allReducers = combineReducers({
 
 const store = createStore(allReducers)
 
-
 store.dispatch(createPolicy("mariem Oueslati", 10))
+store.dispatch(createPolicy("LMS", 20))
 store.dispatch(createPolicy("Ayoub", 20))
 store.dispatch(createPolicy("mariem Oueslati", 10))
 store.dispatch(createPolicy("abie", 60))
+store.dispatch(deletePolicy("LMS"))
 console.log(store.getState())
